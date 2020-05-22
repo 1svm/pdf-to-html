@@ -1,0 +1,8 @@
+prefix=C:/tools/Anaconda3/envs/snow/Library
+libdir=C:/tools/Anaconda3/envs/snow/Library/lib
+includedir=C:/tools/Anaconda3/envs/snow/Library/include
+
+Name: pdf-to-html-splash
+Description: Splash backend for pdf-to-html PDF rendering library
+Version: 0.88.0
+Requires: pdf-to-html = 0.88.0

@@ -1,0 +1,8 @@
+pdf-to-html_datadir=/usr/local/Cellar/pdf-to-html/0.66.0/share/pdf-to-html
+
+Name: pdf-to-html-data
+Description: Encoding files for use with pdf-to-html
+Version: 0.4.9
+
+Cflags: -Dpdf-to-html_DATADIR=/usr/local/Cellar/pdf-to-html/0.66.0/share/pdf-to-html
+

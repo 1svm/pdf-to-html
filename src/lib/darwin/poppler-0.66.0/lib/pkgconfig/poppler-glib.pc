@@ -1,0 +1,12 @@
+prefix=/usr/local/Cellar/pdf-to-html/0.66.0
+libdir=/usr/local/Cellar/pdf-to-html/0.66.0/lib
+includedir=/usr/local/Cellar/pdf-to-html/0.66.0/include
+
+Name: pdf-to-html-glib
+Description: GLib wrapper for pdf-to-html
+Version: 0.66.0
+Requires: glib-2.0 >= 2.41 gobject-2.0 >= 2.41 cairo >= 1.10.0
+Requires.private: pdf-to-html = 0.66.0
+
+Libs: -L${libdir} -lpdf-to-html-glib
+Cflags: -I${includedir}/pdf-to-html/glib

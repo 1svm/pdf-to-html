@@ -1,0 +1,58 @@
+{
+	"name": "pdf-to-html",
+	"version": "1.7.0",
+	"description": "Node.js wrapper for the pdf-to-html PDF rendering library",
+	"keywords": [
+		"pdf-to-html",
+		"pdf",
+		"pdf-converter",
+		"pdf-to-html"
+	],
+	"main": "src/index.js",
+	"author": "Shivam Malhotra",
+	"license": "MIT",
+	"scripts": {
+		"changelog": "conventional-changelog -p @commitlint/config-conventional -s -i CHANGELOG.md && prettier CHANGELOG.md --write",
+		"doc": "jsdoc2md src/index.js > API.md && prettier API.md --write",
+		"dupe-check": "yarn jsinspect ./src",
+		"jest": "jest src --coverage",
+		"lint": "eslint src/**/*.js",
+		"prettier": "prettier ** --write",
+		"test": "yarn lint && yarn test-only",
+		"test-coverage": "cross-env NODE_ENV=test jest --coverage --runInBand",
+		"test-only": "cross-env NODE_ENV=test jest --detectOpenHandles --runInBand"
+	},
+	"jest": {
+		"clearMocks": true,
+		"testEnvironment": "node",
+		"testTimeout": 10000
+	},
+	"prettier": {
+		"arrowParens": "always",
+		"bracketSpacing": true,
+		"endOfLine": "lf",
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^8.3.4",
+		"conventional-changelog-cli": "^2.0.31",
+		"coveralls": "^3.1.0",
+		"cross-env": "^7.0.2",
+		"eslint": "^6.8.0",
+		"eslint-config-airbnb-base": "^14.1.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-plugin-import": "^2.20.2",
+		"eslint-plugin-jest": "^23.9.0",
+		"eslint-plugin-json": "^2.1.1",
+		"glob": "^7.1.6",
+		"jest": "^25.5.4",
+		"jsdoc-to-markdown": "^5.0.3",
+		"jsinspect": "^0.12.7",
+		"prettier": "2.0.5",
+		"typescript": "^3.8.3"
+	}
+}

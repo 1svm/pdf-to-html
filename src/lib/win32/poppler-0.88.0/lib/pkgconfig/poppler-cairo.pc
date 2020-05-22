@@ -1,0 +1,8 @@
+prefix=C:/temp/pdf-to-html-install-dir/x86/pdf-to-html-0.69.0
+libdir=C:/temp/pdf-to-html-install-dir/x86/pdf-to-html-0.69.0/lib
+includedir=C:/temp/pdf-to-html-install-dir/x86/pdf-to-html-0.69.0/include
+
+Name: pdf-to-html-cairo
+Description: Cairo backend for pdf-to-html PDF rendering library
+Version: 0.68.0
+Requires: pdf-to-html = 0.68.0 cairo >= 1.10.0

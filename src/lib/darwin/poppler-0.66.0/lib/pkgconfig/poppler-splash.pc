@@ -1,0 +1,8 @@
+prefix=/usr/local/Cellar/pdf-to-html/0.66.0
+libdir=/usr/local/Cellar/pdf-to-html/0.66.0/lib
+includedir=/usr/local/Cellar/pdf-to-html/0.66.0/include
+
+Name: pdf-to-html-splash
+Description: Splash backend for pdf-to-html PDF rendering library
+Version: 0.66.0
+Requires: pdf-to-html = 0.66.0
